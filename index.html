@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo Simple</title>
+    <style>
+        /* Estilos básicos para centrar el botón */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+        #botonSaludo {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            background-color: #ecf0f1;
+            transition: background-color 0.3s;
+        }
+        #botonSaludo:hover {
+            background-color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
 
+    <button id="botonSaludo" onclick="saludar()">hola</button>
+
+    <script>
+        // Función de JavaScript que se ejecuta cuando se hace clic en el botón
+        function saludar() {
+            // Obtenemos el elemento botón por su ID
+            let boton = document.getElementById('botonSaludo');
+
+            // Cambiamos el texto del botón por el emoji de la mano saludando
+            boton.textContent = '👋';
